@@ -689,7 +689,7 @@ header {
   margin: 100px 0;
   text-align: center;
 }
-/* 
+
 .search-modal .modal-content input[type='text'] {
   background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
   border: 0 none;
@@ -700,7 +700,7 @@ header {
   margin: auto;
   text-align: center;
   width: 400px;
-} */
+}
 
 .search-modal .modal-close {
   text-align: center;
