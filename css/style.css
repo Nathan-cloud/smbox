@@ -3098,6 +3098,7 @@ footer {
   line-height: 18px;
   padding: 16px 26px;
   text-transform: uppercase;
+  margin-left: -23px;
 }
 
 /*mail*/

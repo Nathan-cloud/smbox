@@ -308,7 +308,7 @@
                       </div>
                       <div class="col-md-6 col-sm-6 col-xs-12">
                       <div class="sm-input-box">
-                        <label>How many device</label>
+                        <label>Company Name</label>
                         <input
                           type="text"
                           placeholder="John Doe Inc"
@@ -319,8 +319,9 @@
                     </div>
                     </div>
                   </div>
+                  <br>
 
-                  <div class="col-xs-12">
+                  <div class="col-xs-12 mt-5">
                     <div class="sm-input-box">
                       <button class="hvr-bs" id="submit">Request</button>
                     </div>
@@ -394,7 +395,27 @@
 
     <!-- Scripts -->
     <script type="text/javascript">
-     
+       /*---------------------
+    Request-form
+    --------------------- */
+
+  function ShowHideDiv(chkinstituation) {
+    var dvinst = document.getElementById('dvins');
+    dvinst.style.display = chkinstituation.checked ? 'block' : 'none';
+  }
+  function ShowHideDi(chpersonal) {
+    var dvper = document.getElementById('dvper');
+    dvper.style.display = chpersonal.checked ? 'block' : 'none';
+  }
+
+  function ShowHideskl(chskl) {
+    var sklhide = document.getElementById('sklhide');
+    sklhide.style.display = chskl.checked ? 'block' : 'none';
+  }
+  function ShowHidecomp(chcomp) {
+    var comphide = document.getElementById('comphide');
+    comphide.style.display = chcomp.checked ? 'block' : 'none';
+  }
     </script>
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/jquery-ui.js"></script>
