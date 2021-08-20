@@ -29,6 +29,7 @@
     <link rel="shortcut icon" type="image/png" href="img/icon.png" />
   </head>
 
+
   <body>
     <div id="preloader"></div>
     <!-- header-start -->
@@ -47,20 +48,20 @@
               <nav class="menu-list">
                 <ul>
                   <li class="active">
-                    <a class="smoothscroll" href="index.html">HOME</a>
+                    <a href="index.html" class="smoothscroll">HOME</a>
                   </li>
                   <li>
-                    <a class="smoothscroll" href="index.html">FEATURES</a>
+                    <a href="index.html" class="smoothscroll">FEATURES</a>
                   </li>
                   <li>
-                    <a class="smoothscroll" href="index.html">PACKAGES</a>
+                    <a href="index.html" class="smoothscroll">PACKAGES</a>
                   </li>
                   <li>
-                    <a class="smoothscroll" href="index.html">SCREENSHOT</a>
+                    <a href="index.html" class="smoothscroll" >SCREENSHOT</a>
                   </li>
 
-                  <li><a class="smoothscroll" href="index.html">PRICING</a></li>
-                  <li><a class="smoothscroll" href="index.html">CONTACT</a></li>
+                  <li><a href="index.html" class="smoothscroll" >PRICING</a></li>
+                  <li><a href="index.html" class="smoothscroll">CONTACT</a></li>
                 </ul>
               </nav>
             </div>
@@ -171,43 +172,21 @@
               <div class="cf-msg"></div>
               <form action="request.html" method="post" id="cf">
                 <div class="row">
-                  <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="col-md-12 col-sm-6 col-xs-12">
                     <div class="sm-input-box">
-                      <label>First Name</label>
+                      <label>Director Name</label>
                       <input
                         type="text"
                         placeholder="Johans"
-                        id="fname"
-                        name="fname"
+                        id="name"
+                        name="name"
                         required=""
                       />
                     </div>
                   </div>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="sm-input-box">
-                      <label>Last Name</label>
-                      <input
-                        type="text"
-                        placeholder="Smith"
-                        id="fnamel"
-                        name="fnamel"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="sm-input-box">
-                      <label>Number of Devices</label>
-                      <input
-                        type="text"
-                        placeholder="30"
-                        id="ndevice"
-                        name="ndevice"
-                        required=""
-                      />
-                    </div>
-                  </div>
+               
 
-                  <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="sm-input-box">
                       <label>Address</label>
                       <input
@@ -241,18 +220,33 @@
                       Insitution
                     </label>
 
-                    <label for="chkinst">
+                    <label for="chkper">
                       <input
                         type="checkbox"
-                        id="chkpersonal"
-                        onclick="ShowHidepers(this)"
+                        id="chpersonal"
+                        onclick="ShowHideDi(this)"
                         name="userCat"
                       />
                       Personal
                     </label>
                   </div>
+              
+                  <div class="row" id="dvper" style="display:none">
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                      <div class="sm-input-box">
+                        <label>How many device</label>
+                        <input
+                          type="text"
+                          placeholder="200"
+                          id="num"
+                          name="num"
+                        />
+                      </div>
+                      </div>
+                  </div>
+                  
                   <div class="row" id="dvins" style="display: none">
-                    <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
                       <label for="chkskl">
                         <input
                           type="checkbox"
@@ -263,7 +257,7 @@
                         School
                       </label>
                     </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
                       <label for="chkcompany">
                         <input
                           type="checkbox"
@@ -299,7 +293,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  
                   <div class="row" id="comphide" style="display: none">
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <div class="sm-input-box">
@@ -356,7 +350,7 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                  &copy; All rights reserved
+                  &copy; All Rights Reserved
                 </p>
               </div>
             </div>
@@ -397,21 +391,10 @@
       </div>
     </footer>
     <!-- footer-area-end -->
-    <!-- footer-area-end -->
+
     <!-- Scripts -->
     <script type="text/javascript">
-      function ShowHideDiv(chkinstituation) {
-        var dvinst = document.getElementById('dvins');
-        dvinst.style.display = chkinstituation.checked ? 'block' : 'none';
-      }
-      function ShowHideskl(chskl) {
-        var sklhide = document.getElementById('sklhide');
-        sklhide.style.display = chskl.checked ? 'block' : 'none';
-      }
-      function ShowHidecomp(chcomp) {
-        var comphide = document.getElementById('comphide');
-        comphide.style.display = chcomp.checked ? 'block' : 'none';
-      }
+     
     </script>
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/jquery-ui.js"></script>

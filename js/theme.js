@@ -109,6 +109,28 @@
   });
 
   /*---------------------
+    Request-form
+    --------------------- */
+
+  function ShowHideDiv(chkinstituation) {
+    var dvinst = document.getElementById('dvins');
+    dvinst.style.display = chkinstituation.checked ? 'block' : 'none';
+  }
+  function ShowHideDi(chpersonal) {
+    var dvper = document.getElementById('dvper');
+    dvper.style.display = chpersonal.checked ? 'block' : 'none';
+  }
+
+  function ShowHideskl(chskl) {
+    var sklhide = document.getElementById('sklhide');
+    sklhide.style.display = chskl.checked ? 'block' : 'none';
+  }
+  function ShowHidecomp(chcomp) {
+    var comphide = document.getElementById('comphide');
+    comphide.style.display = chcomp.checked ? 'block' : 'none';
+  }
+
+  /*---------------------
     video-popup
     --------------------- */
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({

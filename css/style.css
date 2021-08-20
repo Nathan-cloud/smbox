@@ -704,6 +704,11 @@ header {
 #dvins {
   margin-left: 3px;
 }
+#comphide,
+#sklhide,
+#dvper {
+  margin-left: -1px;
+}
 
 .search-modal .modal-close {
   text-align: center;
@@ -959,7 +964,7 @@ header {
 }
 
 .download-right .dl-download li:nth-child(2) a {
-  background: #21b9ca  none repeat scroll 0 0;
+  background: #21b9ca none repeat scroll 0 0;
 }
 
 .download-right .dl-download li a span {
@@ -1401,7 +1406,7 @@ header {
 }
 
 .single-pricing .sp-popular {
-  background: #21b9ca  none repeat scroll 0 0;
+  background: #21b9ca none repeat scroll 0 0;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -1840,7 +1845,7 @@ footer {
 
 .home2-hero .h2h-title {
   color: #fff;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 68px;
