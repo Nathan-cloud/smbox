@@ -585,7 +585,7 @@ header {
 }
 
 .menu ul li.active a {
-  color: #ffc600;
+  color: #21b9ca;
 }
 
 /*custom-mobile-menu*/
@@ -959,7 +959,7 @@ header {
 }
 
 .download-right .dl-download li:nth-child(2) a {
-  background: #f7ba4d none repeat scroll 0 0;
+  background: #21b9ca  none repeat scroll 0 0;
 }
 
 .download-right .dl-download li a span {
@@ -1013,7 +1013,7 @@ header {
 }
 
 .counter-area .section-title h2 {
-  color: #f7ba4d;
+  color: #21b9ca;
   display: inline-block;
   margin: 0;
   padding: 0 60px 0 0;
@@ -1162,7 +1162,7 @@ header {
 /*2.7 Testimonial */
 
 .testimonial-area {
-  background: rgba(0, 0, 0, 0) url('../img/home1/testimonial-bg.jpg') no-repeat
+  background: rgba(0, 0, 0, 0) url('../img/home1/testimonial-bg1.jpg') no-repeat
     scroll center top / contain;
   padding: 0;
 }
@@ -1401,7 +1401,7 @@ header {
 }
 
 .single-pricing .sp-popular {
-  background: #ffc600 none repeat scroll 0 0;
+  background: #21b9ca  none repeat scroll 0 0;
   color: #fff;
   display: inline-block;
   font-size: 14px;
