@@ -701,6 +701,9 @@ header {
   text-align: center;
   width: 400px;
 }
+#dvins {
+  margin-left: 3px;
+}
 
 .search-modal .modal-close {
   text-align: center;

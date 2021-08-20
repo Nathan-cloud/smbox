@@ -231,101 +231,98 @@
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-6 col-xs-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="default-tab">
-                          <nav class="mb-5">
-                            <div
-                              class="nav nav-tabs"
-                              id="nav-tab"
-                              role="tablist"
-                            >
-                              <input type="radio" name="user-category" />
-                              <a
-                                class="nav-item nav-link active"
-                                id="nav-home-tab"
-                                data-toggle="tab"
-                                href="#nav-home"
-                                role="tab"
-                                aria-controls="nav-home"
-                                aria-selected="true"
-                                >Institution</a
-                              >
-                              <input type="radio" name="user-category" />
-                              <a
-                                class="nav-item nav-link"
-                                id="nav-profile-tab"
-                                data-toggle="tab"
-                                href="#nav-profile"
-                                role="tab"
-                                aria-controls="nav-profile"
-                                aria-selected="false"
-                                >Personal</a
-                              >
-                            </div>
-                          </nav>
-                          <div
-                            class="tab-content pl-3 pt-2"
-                            id="nav-tabContent"
-                          >
-                            <div
-                              class="tab-pane fade show active"
-                              id="nav-home"
-                              role="tabpanel"
-                              aria-labelledby="nav-home-tab"
-                            >
-                              <ul class="nav">
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <li>
-                                      <input type="checkbox" name="" />
-                                      <label for="">School</label>
+                    <label for="chkinst">
+                      <input
+                        type="checkbox"
+                        id="chkinstituation"
+                        onclick="ShowHideDiv(this)"
+                        name="userCat"
+                      />
+                      Insitution
+                    </label>
 
-                                      <div class="col-md-12 col-sm-6 col-xs-12">
-                                        <div class="sm-input-box">
-                                          <label>How many</label>
-                                          <input
-                                            type="text"
-                                            placeholder="200"
-                                            id="num"
-                                            name="num"
-                                          />
-                                        </div>
-                                      </div>
-                                    </li>
-                                  </div>
-
-                                  <div class="col-md-6">
-                                    <li>
-                                      <input type="checkbox" name="" />
-                                      <label for="">Company</label>
-                                      <div class="col-md-12 col-sm-6 col-xs-12">
-                                        <div class="sm-input-box">
-                                          <label>How many</label>
-                                          <input
-                                            type="text"
-                                            placeholder="200"
-                                            id="num"
-                                            name="num"
-                                          />
-                                        </div>
-                                      </div>
-                                    </li>
-                                  </div>
-                                </div>
-                              </ul>
-                            </div>
-                            <div
-                              class="tab-pane fade"
-                              id="nav-profile"
-                              role="tabpanel"
-                              aria-labelledby="nav-profile-tab"
-                            >
-                              <h2 class="text-center">Request now</h2>
-                            </div>
-                          </div>
+                    <label for="chkinst">
+                      <input
+                        type="checkbox"
+                        id="chkpersonal"
+                        onclick="ShowHidepers(this)"
+                        name="userCat"
+                      />
+                      Personal
+                    </label>
+                  </div>
+                  <div class="row" id="dvins" style="display: none">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                      <label for="chkskl">
+                        <input
+                          type="checkbox"
+                          id="chskl"
+                          onclick="ShowHideskl(this)"
+                          name="insChoice"
+                        />
+                        School
+                      </label>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                      <label for="chkcompany">
+                        <input
+                          type="checkbox"
+                          id="chcompany"
+                          onclick="ShowHidecomp(this)"
+                          name="insChoice"
+                        />
+                        Company
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row" id="sklhide" style="display: none">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <div class="sm-input-box">
+                        <label>How many device</label>
+                        <input
+                          type="text"
+                          placeholder="200"
+                          id="num"
+                          name="num"
+                        />
+                      </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="sm-input-box">
+                          <label>Shool Name</label>
+                          <input
+                            type="text"
+                            placeholder="Institute of kgl"
+                            id="num"
+                            name="num"
+                          />
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="row" id="comphide" style="display: none">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <div class="sm-input-box">
+                        <label>How many device</label>
+                        <input
+                          type="text"
+                          placeholder="200"
+                          id="num"
+                          name="num"
+                        />
+                      </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                      <div class="sm-input-box">
+                        <label>How many device</label>
+                        <input
+                          type="text"
+                          placeholder="John Doe Inc"
+                          id="num"
+                          name="num"
+                        />
+                      </div>
+                    </div>
                     </div>
                   </div>
 
@@ -402,6 +399,20 @@
     <!-- footer-area-end -->
     <!-- footer-area-end -->
     <!-- Scripts -->
+    <script type="text/javascript">
+      function ShowHideDiv(chkinstituation) {
+        var dvinst = document.getElementById('dvins');
+        dvinst.style.display = chkinstituation.checked ? 'block' : 'none';
+      }
+      function ShowHideskl(chskl) {
+        var sklhide = document.getElementById('sklhide');
+        sklhide.style.display = chskl.checked ? 'block' : 'none';
+      }
+      function ShowHidecomp(chcomp) {
+        var comphide = document.getElementById('comphide');
+        comphide.style.display = chcomp.checked ? 'block' : 'none';
+      }
+    </script>
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/owl.carousel.min.js"></script>
