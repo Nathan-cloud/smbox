@@ -214,7 +214,8 @@
                       <input
                         type="checkbox"
                         id="chkinstituation"
-                        onclick="ShowHideDiv(this)"
+                        onclick="return ShowHideDiv(this)"
+                        onclick=" myoption()"
                         name="userCat"
                       />
                       Insitution
@@ -224,12 +225,18 @@
                       <input
                         type="checkbox"
                         id="chpersonal"
-                        onclick="ShowHideDi(this)"
+                        onclick="return ShowHideDi(this)"
+                        onclick="return myoption()"
                         name="userCat"
                       />
                       Personal
                     </label>
                   </div>
+                  <div class="col-md-12">
+                    <span id="msg" class=""></span>
+                  </div>
+                
+                  
               
                   <div class="row" id="dvper" style="display:none">
                     <div class="col-md-12 col-sm-6 col-xs-12">
@@ -398,6 +405,21 @@
        /*---------------------
     Request-form
     --------------------- */
+    function myoption(){
+      var option=document.getElementsByName('userCat');
+      var newop = 0;
+      var count;
+      for(count = 0; count<option.length; count++){
+        if(option[count].checked == true){
+          newop=newop+1;
+        }
+      }
+      if(newop >=2){
+        document.getElementById('msg').innerHTML="Please Select One Option"
+         return false;
+      }
+
+    }
 
   function ShowHideDiv(chkinstituation) {
     var dvinst = document.getElementById('dvins');
